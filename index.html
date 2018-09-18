@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="animations.css">
   <title>SALVADOR SERRUYA</title>
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -12,51 +13,77 @@
 <body>
 
   <section class="sticky">
+
     <div id="logo">
       <img src="nombre.svg" alt="Salvador Serruya" id="name">
     </div>
+
     <div id="hambMenu">
       <img src="Symbol 1 – 2.svg" alt="menu">
-      <ul>
+      <!-- <ul>
         <li class="project"><span></span></li>
         <li class="project"><span></span></li>
         <li class="project"><span></span></li>
         <li class="project"><span></span></li>
         <li class="project"><span></span></li>
-      </ul>
+      </ul> -->
     </div>
 
     <div id="plusMenu">
       <img src="Symbol 2 – 1.svg" alt="menu">
     </div>
   </section>
-  <div id="gridContainer">
+  <div id="mainContainer">
 
-    <div class="bigRight" id="project1">
+    <div  id="project1">
       <div class="filling">
         <span class="projectName">CASA VIRASORO</span>
       </div>
     </div>
 
-    <div class="smallLeft" id="project2">
-        <div class="filling">
-            <span class="projectName">CASA VIRASORO</span>
-          </div>
-      
+    <div class="block animatable fadeInUp" id="project2" >
+      <div class="filling">
+        <span class="projectName">MEDIATECA</span>
+      </div>
     </div>
 
 
-    <div class="smallRight pushDown" id="project3"><img src="coleccion de material\MUARQ\SouthCargo\CAM 27-SNAPSHOT.jpg"
-        alt="Project"></div>
-    <div class="bigLeft" id="project4"><img src="coleccion de material/MUARQ/Renoir/HALL-09 PS.jpg" alt="Project"></div>
-    <div class="smallLeft" id="project5"><img src="coleccion de material/Monte Hermoso/baño ps.jpg" alt="Project"></div>
-    <div class="smallRight" id="project6"><img src="coleccion de material/THE WALL/Algodon/IMG-20180614-WA0022.jpg" alt="Project"></div>
-    <div class="bigRight" id="project7"><img src="coleccion de material/Monte Hermoso/PS final.jpg" alt="Project"></div>
-    <div class="bigLeft" id="project8"><img src="coleccion de material/MUARQ/DAC/CAM6-RGB.jpg" alt="Project"></div> -->
-    <!-- <div class="smallRight"><img src="coleccion de material\Mediateca\pp.jpg" alt="Project"></div>
-    <div class="bigRight"><img src="coleccion de material\Mediateca\pp.jpg" alt="Project"></div>
-    <div class="bigLeft"><img src="coleccion de material\Mediateca\pp.jpg" alt="Project"></div>
+    <div class="block animatable fadeInUp" id="project3">
+      <div class="filling">
+        <span class="projectName">SOUTH CARGO</span>
+      </div>
+    </div>
 
+    <div class="block animatable fadeInUp" id="project4">
+      <div class="filling">
+        <span class="projectName">RENOIR</span>
+      </div>
+    </div>
+
+    <div class="block animatable fadeInUp" id="project5">
+      <div class="filling">
+        <span class="projectName">BAÑO M.H.</span>
+      </div>
+    </div>
+
+    <div class="block animatable fadeInUp" id="project6">
+      <div class="filling">
+        <span class="projectName">LOBBY</span>
+      </div>
+    </div>
+
+    <div class="block animatable fadeInUp" id="project7">
+      <div class="filling">
+        <span class="projectName">3 CASAS MH</span>
+      </div>
+    </div>
+
+    <div class="block animatable fadeInUp" id="project8">
+        <div class="filling">
+          <span class="projectName">D.A. CINE</span>
+        </div>
+      </div> 
+ 
   </div>
 </body>
 
