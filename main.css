@@ -37,32 +37,37 @@ body {
     margin: 0;
     background: #F4F4F4;
     height: 100%;
+    width: 95%;
     font-size: 100%;
+    padding: 0;
 }
 ul {
     list-style-type: none;
 }
 #gridContainer {
-    padding-top: 10em; 
+    /* padding-top: 4em;  */
     margin: 0px 10em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: .8em;
+    
 }
 .sticky {
-    margin: 0px 6em;
+    margin: 0px 10em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: .8em;
     position: fixed;
-    width: 80vw;
-    min-height: 10em;
+    width: 1200px;
+    /* width: 80vw; */
+    /* min-height: 10em; */
 }
 #logo {
     grid-column-start: 1;
     grid-column-end: 4;
 }
 #logo, #hambMenu, #plusMenu {
+
     margin-top: 7em;  
 }
 #logo img, #hambMenu img, #plusMenu img{
@@ -81,21 +86,25 @@ img{
     max-width: 100%;
 }
 .bigRight {
+    height: 350px;
     margin: 3.5em 0;
     grid-column-start: 4;
     grid-column-end: 12;
 }
 .bigLeft {
+    height: 350px;
     margin: 3.5em 0;
     grid-column-start: 1;
     grid-column-end: 9;
 }
 .smallLeft {
+    height: 550px;
     margin: 2.5em 0;
     grid-column-start: 2;
     grid-column-end: 6;
 }
 .smallRight {
+    height: 550px;
     margin: 2.5em 0;
     grid-column-start: 8;
     grid-column-end: 12;
@@ -103,4 +112,48 @@ img{
 
 .pushDown {
     padding-top: 8em;
+}
+#project1 .filling {
+    
+    background: linear-gradient(to right, rgb(178,149,128) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+#project2 .filling {
+    background: linear-gradient(to right, rgb(149, 40, 27) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.filling {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 5em; 
+    transition:all .3s ;
+}
+#project1 .filling:hover, #project2 .filling:hover, #project3 .filling:hover, #project4 .filling:hover,
+#project5 .filling:hover, #project6 .filling:hover, #project7 .filling:hover{
+    background-position: left bottom;
+}
+.projectName {
+    font-family: "HKGroteskSemiBold" ,sans-serif;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0;
+    transition:all .3s ease;
+    transition-delay:all .3s;
+
+}
+.filling:hover > .projectName {
+    opacity: 1;
+    transition:all .2s ease;
+    transition-delay:all 0s;
+}
+#project1 {
+    background: url("coleccion de material/casa_virasoro/360.jpg");
+    background-size: cover;
+}
+#project2 {
+    background: url("coleccion de material/Mediateca/pp.jpg");
+    background-size: cover;
 }
