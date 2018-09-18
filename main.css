@@ -29,6 +29,7 @@
   font-family: HKGroteskBold;
   src: url(fonts/hkgrotesk-bold-webfont.woff);
 }
+
 * {
     box-sizing: border-box;
 }
@@ -37,107 +38,229 @@ body {
     margin: 0;
     background: #F4F4F4;
     height: 100%;
-    width: 95%;
+    width: 80%;
     font-size: 100%;
     padding: 0;
 }
 ul {
     list-style-type: none;
 }
-#gridContainer {
+#mainContainer {
     /* padding-top: 4em;  */
     margin: 0px 10em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: .8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
     
 }
 .sticky {
-    margin: 0px 10em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: .8em;
+    z-index: 2;
+    margin: 0px 10%;
+    display: inline-flex;
+    flex-wrap: nowrap;
     position: fixed;
-    width: 1200px;
+    width: 100vw;
     /* width: 80vw; */
     /* min-height: 10em; */
 }
 #logo {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    align-self: flex-start;
 }
 #logo, #hambMenu, #plusMenu {
 
     margin-top: 7em;  
 }
 #logo img, #hambMenu img, #plusMenu img{
-    max-height: 18px;
+   height: 18px;
+   min-height: 18px;
 }
 
 #hambMenu {
-    grid-column-start: 11;
-    grid-column-end: 12;
+    margin-left: 55%; 
 }
 #plusMenu {
-    grid-column-start: 12;
-    grid-column-end: 13;
+    margin-left: 3%;
 }
 img{
     max-width: 100%;
 }
-.bigRight {
-    height: 350px;
-    margin: 3.5em 0;
-    grid-column-start: 4;
-    grid-column-end: 12;
-}
-.bigLeft {
-    height: 350px;
-    margin: 3.5em 0;
-    grid-column-start: 1;
-    grid-column-end: 9;
-}
-.smallLeft {
-    height: 550px;
-    margin: 2.5em 0;
-    grid-column-start: 2;
-    grid-column-end: 6;
-}
-.smallRight {
-    height: 550px;
-    margin: 2.5em 0;
-    grid-column-start: 8;
-    grid-column-end: 12;
-}
 
-.pushDown {
-    padding-top: 8em;
+
+#project1 {
+    margin-left: 18vw;
+    width: 55vw;
+    height: 25vw;
+
+    background: url("coleccion de material/casa_virasoro/360.jpg");
+    background-size: cover;
 }
 #project1 .filling {
-    
-    background: linear-gradient(to right, rgb(178,149,128) 50%, rgba(255,0,0,0) 50%);
+    height: inherit;
+    padding-top: 11vw;
+    background: linear-gradient(to right, rgb(175, 162, 153) 50%, rgba(255,0,0,0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
+    margin-bottom: 30px;
+}
+#project1 .filling span {
+    color: rgb(90, 62, 11);
+}
+
+#project2 {
+    margin-top: 7vw;
+    margin-left: 9vw;
+    width: 25vw;
+    height: 30vw;
+     
+    
+    background: url("coleccion de material/Mediateca/pp.jpg");
+    background-size: cover;
 }
 #project2 .filling {
+    height: inherit;
+    padding-top: 13vw;
     background: linear-gradient(to right, rgb(149, 40, 27) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;  
+}
+
+#project3 {
+    margin-top: 15vw;
+    margin-left: 10vw;
+    width: 25vw;
+    height: 30vw;
+    
+
+    background: url("coleccion de material/MUARQ/SouthCargo/CAM 27-SNAPSHOT.jpg");
+    background-size: cover;
+}
+#project3 .filling {
+    height: inherit;
+    padding-top: 13vw;
+    background: linear-gradient(to right, rgb(204, 182, 108) 50%, rgba(255,0,0,0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
 }
+
+#project4 {
+    margin-left: 2vw;
+    margin-top: 7vw;
+    width: 47vw;
+    height: 27vw;
+
+    background: url("coleccion de material/MUARQ/Renoir/HALL-09 PS.jpg");
+    background-size: cover;
+}
+#project4 .filling {
+    height: inherit;
+    padding-top: 12vw;
+    background: linear-gradient(to right, rgb(230, 230, 230) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    margin-bottom: 30px;
+}
+#project4 .filling span {
+    color: rgb(177, 132, 9);
+}
+
+#project5 {
+    margin-top: 15vw;
+    margin-left: 4vw;
+    width: 25vw;
+    height: 30vw;
+     
+    
+    background: url("coleccion de material/Monte Hermoso/baño ps.jpg");
+    background-size: cover;
+}
+#project5 .filling {
+    height: inherit;
+    padding-top: 13vw;
+    background: linear-gradient(to right, rgb(122, 117, 110) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;  
+}
+
+#project6 {
+    margin-top: 7vw;
+    margin-left: 10vw;
+    width: 25vw;
+    height: 30vw;
+    
+
+    background: url("coleccion de material/THE WALL/Algodon/IMG-20180614-WA0022.jpg");
+    background-size: cover;
+}
+#project6 .filling {
+    height: inherit;
+    padding-top: 13vw;
+    background: linear-gradient(to right, rgb(123, 184, 202) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+#project6 .filling span {
+    color: rgb(0, 0, 0);
+}
+
+#project7 {
+    margin-left: 30vw;
+    margin-top: 7vw;
+    width: 47vw;
+    height: 27vw;
+
+    background: url("coleccion de material/Monte Hermoso/PS final.jpg");
+    background-size: cover;
+}
+#project7 .filling {
+    height: inherit;
+    padding-top: 12vw;
+    background: linear-gradient(to right, rgb(224, 217, 202) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    margin-bottom: 30px;
+}
+#project7 .filling span {
+    color: rgb(33, 51, 3);
+}
+
+#project8 {
+    margin-left: 2vw;
+    margin-top: 7vw;
+    width: 47vw;
+    height: 27vw;
+
+    background: url("coleccion de material/MUARQ/DAC/CAM6-RGB.jpg");
+    background-size: cover;
+}
+#project8 .filling {
+    height: inherit;
+    padding-top: 12vw;
+    background: linear-gradient(to right, rgb(190, 54, 72) 50%, rgba(255,0,0,0) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
 .filling {
     height: 100%;
     width: 100%;
-    text-align: center;
-    padding-top: 5em; 
+    text-align: center; 
     transition:all .3s ;
 }
 #project1 .filling:hover, #project2 .filling:hover, #project3 .filling:hover, #project4 .filling:hover,
-#project5 .filling:hover, #project6 .filling:hover, #project7 .filling:hover{
+#project5 .filling:hover, #project6 .filling:hover, #project7 .filling:hover, #project8 .filling:hover{
     background-position: left bottom;
 }
 .projectName {
-    font-family: "HKGroteskSemiBold" ,sans-serif;
-    font-size: 1.5em;
+    font-family: "HKGroteskBold" ,sans-serif;
+    letter-spacing: .4em;
+    font-size: 1.8em;
     color: white;
     opacity: 0;
     transition:all .3s ease;
@@ -148,12 +271,4 @@ img{
     opacity: 1;
     transition:all .2s ease;
     transition-delay:all 0s;
-}
-#project1 {
-    background: url("coleccion de material/casa_virasoro/360.jpg");
-    background-size: cover;
-}
-#project2 {
-    background: url("coleccion de material/Mediateca/pp.jpg");
-    background-size: cover;
 }
